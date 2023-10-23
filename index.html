@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blood Bank Management</title>
+</head>
+<body>
+    <h1>Blood Bank Management System</h1>
+    
+    <!-- User Input Form -->
+    <div id="input-form">
+        <img src="https://clipart-library.com/images/yTkr9gzGc.jpg" alt="Blood Bank Image" width="300">
+        <label for="blood-type">Select Your Blood Type:</label>
+        <select id="blood-type">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">A-</option>
+            <option value="AB-">A-</option>
+            <!-- Add more blood type options as needed -->
+        </select>
+        <input type="text" id="user-name" placeholder="Your Name">
+        <input type="text" id="user-phone" placeholder="Your Phone Number">
+        <input type="text" id="user-location" placeholder="Your Location">
+        <label>Are you a donor or requester?</label>
+        <input type="radio" name="user-type" value="donor">Donor
+        <input type="radio" name="user-type" value="requester">Requester
+        <button id="submit-button">Submit</button>
+    </div>
+
+    <!-- Display Donors and Requesters -->
+    <div id="donor-list">
+        <h2>Donors</h2>
+        <ul id="donors"></ul>
+    </div>
+    <div id="requester-list">
+        <h2>Requesters</h2>
+        <ul id="requesters"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
